@@ -27,6 +27,14 @@ const socials = [
 ];
 
 export const Hero = () => {
+    const handleScroll = () => {
+        const element = document.getElementById("contact");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            console.warn(`Element with ID "${targetId}" not found.`);
+        }
+    };
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* Background Image */}
@@ -125,7 +133,11 @@ export const Hero = () => {
 
                         {/* CTA Buttons */}
                         <div className="animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button
+                                className="cursor-pointer"
+                                size="lg"
+                                onClick={handleScroll}
+                            >
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
                         </div>
