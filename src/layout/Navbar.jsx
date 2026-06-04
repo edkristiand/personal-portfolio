@@ -22,6 +22,15 @@ export const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const handleScroll = () => {
+        const element = document.getElementById("contact");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            console.warn(`Element with ID "${targetId}" not found.`);
+        }
+    };
+
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3" : "bg-transparent py-5"}`}
@@ -51,7 +60,13 @@ export const Navbar = () => {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button size="sm">Contact Me</Button>
+                    <Button
+                        className="cursor-pointer"
+                        size="sm"
+                        onClick={handleScroll}
+                    >
+                        Contact Me
+                    </Button>
                 </div>
 
                 {/* MOBILE Menu Button */}

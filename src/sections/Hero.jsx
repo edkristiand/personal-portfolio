@@ -35,6 +35,7 @@ export const Hero = () => {
             console.warn(`Element with ID "${targetId}" not found.`);
         }
     };
+
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* Background Image */}
