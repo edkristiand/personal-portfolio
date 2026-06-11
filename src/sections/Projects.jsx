@@ -7,7 +7,7 @@ const projects = [
             "An E-Commerce website built for WSSA using Wordpress and Woocommerce.",
         image: "/projects/wssa.jpg",
         link: "https://wssa.com.au/",
-        tags: ["Wordpress", "Woocommerce", "PHP"],
+        tags: ["Wordpress", "Woocommerce", "PHP", "SEO", "Divi"],
     },
     {
         title: "Proactive",
@@ -15,7 +15,7 @@ const projects = [
             "A Business Finance website built for Proactive using Bricks",
         image: "/projects/proactive.jpg",
         link: "https://proactive.net.au/",
-        tags: ["Wordpress", "Bricks", "Gravity Forms"],
+        tags: ["Wordpress", "Bricks", "Gravity Forms", "Optimization"],
     },
     {
         title: "Expert Training Group",
@@ -23,7 +23,7 @@ const projects = [
             "A website built for Expert Training Group using Wordpress and Bricks.",
         image: "/projects/expert-training.jpg",
         link: "https://experttraininggroup.com.au/",
-        tags: ["Wordpress", "Figma", "Bricks"],
+        tags: ["Wordpress", "Figma", "Bricks", "Optimization"],
     },
     {
         title: "Lash Sublime Couture",
@@ -31,7 +31,7 @@ const projects = [
             "A website built for Lash Sublime Couture using Wordpress and Woocommerce.",
         image: "/projects/sublime.jpg",
         link: "https://sublime-e.com/",
-        tags: ["Wordpress", "Woocommerce", "Divi"],
+        tags: ["Wordpress", "Woocommerce", "Divi", "SEO"],
     },
 ];
 
